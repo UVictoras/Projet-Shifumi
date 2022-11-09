@@ -27,17 +27,21 @@ impaire indiquant en combien se jouera la partie.
                 On ajoute 1 à la valeur de ScorePlayer
                 On affiche le message "You got this one, great job !"
             Sinon
+                Alors :
                 On ajoute 1 à la valeur de ScoreIA
                 On affiche le message "Sadly for you, he gets you on this one. Keep it up !"
         Sinon
+            Alors :
             On affiche le message "Waw ! A draw ! That's kind of lucky, or unlucky it depends how you see that."
         Si le score du joueur est supérieur à celui du score de l'IA
             Alors :
             On donne la valeur de ScorePlayer à la variable HighestScore
         Sinon
+            Alors :
             On donne la valeur de ScoreIA à la variable HighestScore
     Si le score du joueur est supérieur à celui du score de l'IA
-        Alors
+        Alors :
         On retourne le message "The winner is {}, with a score of {}-{}, congratulations !" avec dans les accolades les variables : Player, ScorePlayer et ScoreIA
     Sinon 
+        Alors :
         On retourne le message "The winner is the IA, with a score of {}-{}, you may have more luck next time !" avec dans les accolades les variables : ScoreIA et ScorePlayer
