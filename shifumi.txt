@@ -1,3 +1,5 @@
+DEBUT
+
 --- Prérequis ---
 On admet qu'une fonction 'random' existe et que son exécution génère aléatoirement 0, 1 ou 2.
 On admet qu'une fonction 'input' existe et qu'elle récupère la réponse à ce qu'on demande à l'utilisateur dans le terminal de commande.
@@ -43,3 +45,7 @@ On crée une fonction Shifumi qui prend en argument BO, un nombre entier impaire
     Sinon 
         Alors :
         On retourne le message "The winner is the IA, with a score of {}-{}, you may have more luck next time !" avec dans les accolades les variables : ScoreIA et ScorePlayer
+
+On exécute la fonction shifumi avec en paramètre 3, pour la tester avec un BO 3.
+
+FIN
