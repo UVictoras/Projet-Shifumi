@@ -9,7 +9,7 @@ Je définis une fonction CalculateScoreToWin qui prend en paramètre BO, un enti
 
 --- Pseudo Code du Shifumi ---
 
-On crée une fonction Shifumi qui prend en argument BO, un nombre entier impaire indiquant en combien de manche la partie se jouera 
+On crée une fonction Shifumi qui prend en argument BO, un nombre entier impaire indiquant en combien de manches la partie se jouera 
     On assigne 0 à deux variables ScorePlayer et ScoreIA qui contiendront les scores séparément sous forme d'entier.
     On assigne 0 à HighestScore, une variable qui aura le meilleur score à chaque manche.
     On assigne "Rock", "Paper" et "Scissors" à une liste IAPossibilities avec 3 strings "Rock", "Paper" et "Scissors".
