@@ -17,9 +17,7 @@ On crée une fonction Shifumi qui prend en argument BO, un nombre entier impaire
     Tant que HighestScore est inférieur à la valeur donnée à l'appel de CalculateScoreToWin(BO).
         Alors :
         On assigne à la variable PlayerChoice le choix de jeu du joueur qui est le retour de l'exécution de la fonction input("Enter what you want to play here : ")
-        On genère un nombre aléatoire entre 0 et 2 compris grâce à la fonction random 
-        et j'assigne à la variable IAChoice l'élément du tableau 'IAPossibilities' correspondant à l'index de ce nombre
-        attribué à la variable IAChoice
+        On assigne à une variable IAChoice l'élément du tableau IAPossibilities correspondant à l'index du retour de l'exécution de la fonction random
         Si le choix du joueur est différent de celui de l'IA
             Alors :
             Si le joueur a fait "Rock" ET l'IA "Scissors" ou le joueur fait "Scissors" ET l'IA "Paper" ou le joueur fait  "Paper" et l'IA "Rock"
