@@ -43,6 +43,7 @@ def Shifumi(BO):
             #On affiche un message d'erreur et on saute le tour
             print("Um... How to say that... You didn't input a correct answer for the game. But nevermind that, try again mate.")
         #Sinon :
+        else:
             #Alors :
             #Si le choix du joueur est différent de celui de l'IA
             if PlayerChoice != IAChoice:
