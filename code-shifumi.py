@@ -77,6 +77,8 @@ def Shifumi(BO):
                 #Alors :
                 #On assigne à la variable HighestScore la valeur de ScoreIA
                 HighestScore = ScoreIA
+        #On affiche un message vide pour espacer les messages du terminal
+        print("")
     #Si le score du joueur est supérieur à celui du score de l'IA
     if ScorePlayer > ScoreIA:
         #Alors :
