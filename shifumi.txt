@@ -1,6 +1,7 @@
 DEBUT
 
 --- Prérequis ---
+
 On admet qu'une fonction 'random' existe et que son exécution génère aléatoirement 0, 1 ou 2.
 On admet qu'une fonction 'input' existe et qu'elle récupère la réponse à ce qu'on demande à l'utilisateur dans le terminal de commande.
 
