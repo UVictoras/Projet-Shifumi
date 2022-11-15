@@ -21,25 +21,30 @@ On crée une fonction Shifumi qui prend en argument BO, un nombre entier impaire
         Alors :
         On assigne à la variable PlayerChoice le choix de jeu du joueur qui est le retour de l'exécution de la fonction input("Enter what you want to play here : ")
         On assigne à une variable IAChoice l'élément du tableau IAPossibilities correspondant à l'index du retour de l'exécution de la fonction random
-        Si le choix du joueur est différent de celui de l'IA
+        Si le choix du joueur est différent de "Rock", "Paper" ou "Scissors"
             Alors :
-            Si le joueur a fait "Rock" ET l'IA "Scissors" ou le joueur fait "Scissors" ET l'IA "Paper" ou le joueur fait  "Paper" et l'IA "Rock"
+            On affiche un message d'erreur et on saute le tour
+        Sinon
+            Alors :
+            Si le choix du joueur est différent de celui de l'IA
                 Alors :
-                On ajoute 1 à la valeur de ScorePlayer
-                On affiche le message "You got this one, great job !"
+                Si le joueur a fait "Rock" ET l'IA "Scissors" ou le joueur fait "Scissors" ET l'IA "Paper" ou le joueur fait  "Paper" et l'IA "Rock"
+                    Alors :
+                    On ajoute 1 à la valeur de ScorePlayer
+                    On affiche le message "You got this one, great job !"
+                Sinon
+                    Alors :
+                    On ajoute 1 à la valeur de ScoreIA
+                    On affiche le message "Sadly for you, he gets you on this one. Keep it up !"
             Sinon
                 Alors :
-                On ajoute 1 à la valeur de ScoreIA
-                On affiche le message "Sadly for you, he gets you on this one. Keep it up !"
-        Sinon
-            Alors :
-            On affiche le message "Waw ! A draw ! That's kind of lucky, or unlucky it depends how you see that."
-        Si le score du joueur est supérieur à celui du score de l'IA
-            Alors :
-            On assigne à la variable HighestScore la valeur de ScorePlayer
-        Sinon
-            Alors :
-            On assigne à la variable HighestScore la valeur de ScoreIA
+                On affiche le message "Waw ! A draw ! That's kind of lucky, or unlucky it depends how you see that."
+            Si le score du joueur est supérieur à celui du score de l'IA
+                Alors :
+                On assigne à la variable HighestScore la valeur de ScorePlayer
+            Sinon
+                Alors :
+                On assigne à la variable HighestScore la valeur de ScoreIA
     Si le score du joueur est supérieur à celui du score de l'IA
         Alors :
         On retourne le message "The winner is {}, with a score of {}-{}, congratulations !" avec dans les accolades les variables : Player, ScorePlayer et ScoreIA
